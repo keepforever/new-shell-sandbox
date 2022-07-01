@@ -1,12 +1,7 @@
 import * as React from "react";
 import { Outlet, useCatch } from "remix";
-import Layout from "~/src/components/Layout";
-import { Document } from "~/src/components/Document";
-
-interface DocumentProps {
-  children: React.ReactNode;
-  title?: string;
-}
+import Layout from "~/components/Layout";
+import { Document } from "~/components/Document";
 
 // https://remix.run/api/conventions#default-export
 // https://remix.run/api/conventions#route-filenames

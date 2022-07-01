@@ -1,12 +1,12 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
-import NavbarSimple from "./NavbarSimple";
+import NavbarTop from "./NavbarTop";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <NavbarSimple />
-      <Container maxWidth="lg">{children}</Container>
+      <NavbarTop />
+      {children}
     </>
   );
 }

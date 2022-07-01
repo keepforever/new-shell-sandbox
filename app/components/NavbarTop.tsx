@@ -3,7 +3,7 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 
-const ResponsiveAppBar = () => {
+const NavbarTop = () => {
   return (
     <AppBar position="static">
       <Toolbar disableGutters>
@@ -18,4 +18,5 @@ const ResponsiveAppBar = () => {
     </AppBar>
   );
 };
-export default ResponsiveAppBar;
+
+export default NavbarTop;

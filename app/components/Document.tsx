@@ -2,8 +2,8 @@ import * as React from "react";
 import { Links, LiveReload, Meta, Scripts, ScrollRestoration } from "remix";
 import { withEmotionCache } from "@emotion/react";
 import { unstable_useEnhancedEffect as useEnhancedEffect } from "@mui/material";
-import theme from "~/src/theme";
-import ClientStyleContext from "~/src/ClientStyleContext";
+import theme from "~/utils/theme";
+import ClientStyleContext from "~/components/ClientStyleContext";
 
 interface DocumentProps {
   children: React.ReactNode;
@@ -31,7 +31,13 @@ export const Document = withEmotionCache(
     }, []);
 
     return (
-      <html lang="en">
+      <html
+        lang="en"
+        style={{
+          backgroundColor: "pink",
+          minHeight: "100vh",
+        }}
+      >
         <head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -48,7 +54,7 @@ export const Document = withEmotionCache(
             content="emotion-insertion-point"
           />
         </head>
-        <body>
+        <body style={{ backgroundColor: "lightgrey" }}>
           {children}
           <ScrollRestoration />
           <Scripts />
