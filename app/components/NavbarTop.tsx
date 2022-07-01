@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 
 const NavbarTop = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Toolbar disableGutters>
         <Button
           sx={{ my: 2, color: "white", display: "block" }}

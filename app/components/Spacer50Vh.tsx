@@ -5,7 +5,7 @@ type Props = {};
 
 export const Spacer25Vh: React.FC<Props> = (props) => {
   return (
-    <Box sx={{ height: "25vh", p: 3 }}>
+    <Box sx={{ height: "50vh", p: 3 }}>
       <h3>Hello Spacer25Vh</h3>
     </Box>
   );
