@@ -1,8 +1,6 @@
 import * as React from "react";
-import { Link } from "remix";
 import Box from "@mui/material/Box";
 import NavbarTop from "./NavbarTop";
-import Container from "@mui/material/Container";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import SideNav from "./SideNav";
 
@@ -19,6 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           maxHeight: "calc(100vh - 60px)",
           backgroundColor: "orange",
           overflowY: "auto",
+          // pt: 4,
         }}
       >
         <SideNav />
@@ -34,8 +33,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Box
             sx={{
               maxWidth: 1280,
-              outline: "1px solid yellow",
+              outline: "5px solid yellow",
               mx: "auto",
+              borderRadius: 2,
+              mt: 4,
             }}
           >
             {children}

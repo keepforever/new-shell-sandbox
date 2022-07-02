@@ -15,13 +15,13 @@ export const SideNav: React.FC<Props> = (props) => {
         backgroundColor: "red",
         color: "blue",
         fontSize: "1.5rem",
-        p: 2,
+        p: 1,
         display: matches ? "block" : "none",
       }}
     >
       side nav
       <br />
-      {matches ? "yes" : "no"}
+      Width {">"} 1400: {matches ? "yes" : "no"}
     </Box>
   );
 };
