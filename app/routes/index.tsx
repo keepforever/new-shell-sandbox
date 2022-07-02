@@ -25,21 +25,35 @@ export default function Index() {
       <Typography variant="h4" component="h1" gutterBottom>
         BODY: GREY
       </Typography>
-
-      <Spacer50Vh />
       <Box
         display="flex"
         alignItems="center"
         position="sticky"
-        top={8}
+        top={0}
         sx={{
           backgroundColor: "blue",
           color: "yellow",
           p: 3,
         }}
       >
-        Sticky Div, top = 80
+        Sticky Div, top = 0
       </Box>
+
+      <Box
+        display="flex"
+        alignItems="center"
+        position="sticky"
+        top={90}
+        sx={{
+          backgroundColor: "green",
+          color: "yellow",
+          p: 3,
+        }}
+      >
+        Sticky Div, top = 0
+      </Box>
+
+      <Spacer50Vh />
       <Spacer25Vh />
       <Spacer25Vh />
       <Spacer50Vh />
