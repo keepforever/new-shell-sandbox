@@ -15,7 +15,7 @@ const NavbarTop = () => {
         gap: 2,
         py: 3,
         px: 3,
-        height: "80px",
+        height: "60px",
       }}
     >
       <Link to="/" color="secondary">
