@@ -5,12 +5,12 @@ import { Link } from "remix";
 import Typography from "@mui/material/Typography";
 import Spacer50Vh from "~/components/Spacer50Vh";
 import Spacer25Vh from "~/components/Spacer25Vh";
+import StickyFlex from "~/components/StickyFlex";
 
 // https://remix.run/api/conventions#meta
 export const meta: MetaFunction = () => {
   return {
-    title: "Remix Starter",
-    description: "Welcome to remix!",
+    title: "CSS Fun",
   };
 };
 
@@ -25,33 +25,10 @@ export default function Index() {
       <Typography variant="h4" component="h1" gutterBottom>
         BODY: GREY
       </Typography>
-      <Box
-        display="flex"
-        alignItems="center"
-        position="sticky"
-        top={0}
-        sx={{
-          backgroundColor: "blue",
-          color: "yellow",
-          p: 3,
-        }}
-      >
-        Sticky Div, top = 0
-      </Box>
 
-      <Box
-        display="flex"
-        alignItems="center"
-        position="sticky"
-        top={90}
-        sx={{
-          backgroundColor: "green",
-          color: "yellow",
-          p: 3,
-        }}
-      >
-        Sticky Div, top = 0
-      </Box>
+      <StickyFlex top={0} backgroundColor="blue" color="red" />
+
+      <StickyFlex top={80} backgroundColor="cornsilk" color="black" />
 
       <Spacer50Vh />
       <Spacer25Vh />
