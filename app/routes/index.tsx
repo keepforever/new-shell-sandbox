@@ -1,7 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import type { MetaFunction } from "remix";
-import { Link } from "remix";
 import Typography from "@mui/material/Typography";
 import Spacer50Vh from "~/components/Spacer50Vh";
 import Spacer25Vh from "~/components/Spacer25Vh";
@@ -67,10 +66,15 @@ export default function Index() {
             fontSize: "1.5rem",
           }}
         >
-          <Box display="flex" flexDirection="column">
-            With ref
-            <br />
-            Sticky Div, top = -1
+          <Box display="flex" alignItems="center">
+            <Typography variant="h4" component="span">
+              Sticky Div, top = -1 &nbsp;
+            </Typography>
+            {toggle ? (
+              <Typography variant="h4" component="span">
+                Now I'm Stuck!!!
+              </Typography>
+            ) : null}
           </Box>
         </Box>
 
