@@ -25,15 +25,13 @@ export default function Index() {
       <Typography variant="h4" component="h1" gutterBottom>
         BODY: GREY
       </Typography>
-      <Link to="/about" color="secondary">
-        Go to the about page
-      </Link>
+
       <Spacer50Vh />
       <Box
         display="flex"
         alignItems="center"
         position="sticky"
-        top={80}
+        top={8}
         sx={{
           backgroundColor: "blue",
           color: "yellow",

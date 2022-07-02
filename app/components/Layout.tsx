@@ -1,27 +1,22 @@
 import * as React from "react";
+import { Link } from "remix";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import NavbarTop from "./NavbarTop";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      {/* <NavbarTop /> */}
+      <NavbarTop />
+
       <Box
-        display="flex"
-        alignItems="center"
         sx={{
-          backgroundColor: "yellow",
-          position: "sticky",
-          top: 0,
-          py: 3,
-          px: 3,
+          maxHeight: "calc(100vh - 80px)",
+          backgroundColor: "orange",
+          overflowY: "auto",
         }}
       >
-        Sticky Div, top = 0
+        {children}
       </Box>
-
-      {children}
     </>
   );
 }

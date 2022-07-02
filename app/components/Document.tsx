@@ -31,13 +31,7 @@ export const Document = withEmotionCache(
     }, []);
 
     return (
-      <html
-        lang="en"
-        style={{
-          backgroundColor: "pink",
-          minHeight: "100vh",
-        }}
-      >
+      <html lang="en">
         <head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -54,7 +48,12 @@ export const Document = withEmotionCache(
             content="emotion-insertion-point"
           />
         </head>
-        <body style={{ backgroundColor: "lightgrey" }}>
+        <body
+          style={{
+            backgroundColor: "lightgrey",
+            minHeight: "100vh",
+          }}
+        >
           {children}
           <ScrollRestoration />
           <Scripts />
