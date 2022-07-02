@@ -5,8 +5,15 @@ type Props = {};
 
 export const Spacer25Vh: React.FC<Props> = (props) => {
   return (
-    <Box sx={{ height: "25vh", p: 3, outline: "1px solid black" }}>
-      <h3>Hello Spacer25Vh</h3>
+    <Box
+      sx={{
+        height: "25vh",
+        p: 3,
+        outline: "1px solid black",
+        fontSize: "1.5em",
+      }}
+    >
+      <h3>Spacer - 25Vh</h3>
     </Box>
   );
 };

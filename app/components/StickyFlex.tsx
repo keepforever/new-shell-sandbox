@@ -15,12 +15,14 @@ type Props = {
   top: number;
   backgroundColor?: string;
   color?: string;
+  title?: string;
 };
 
 export const StickyFlex: React.FC<Props> = ({
   top,
   color,
   backgroundColor,
+  title,
 }) => {
   return (
     <Box
@@ -32,9 +34,14 @@ export const StickyFlex: React.FC<Props> = ({
         backgroundColor,
         color,
         p: 3,
+        fontSize: "1.5rem",
       }}
     >
-      Sticky Div, top = {top}
+      <Box display="flex" flexDirection="column">
+        {title}
+        <br />
+        Sticky Div, top = {top}
+      </Box>
     </Box>
   );
 };

@@ -21,15 +21,11 @@ export default function Index() {
       <Typography variant="h4" component="h1" gutterBottom>
         HTML: PINK
       </Typography>
-
       <Typography variant="h4" component="h1" gutterBottom>
         BODY: GREY
       </Typography>
-
       <StickyFlex top={0} backgroundColor="blue" color="red" />
-
       <StickyFlex top={80} backgroundColor="cornsilk" color="black" />
-
       <Spacer50Vh />
       <Spacer25Vh />
       <Spacer25Vh />
