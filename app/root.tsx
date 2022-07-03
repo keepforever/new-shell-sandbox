@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Outlet, useCatch } from "remix";
-import Layout from "~/components/Layout";
+import LayoutAlpha from "~/components/LayoutAlpha";
 import { Document } from "~/components/Document";
 
 // https://remix.run/api/conventions#default-export
@@ -8,9 +8,9 @@ import { Document } from "~/components/Document";
 export default function App() {
   return (
     <Document>
-      <Layout>
+      <LayoutAlpha>
         <Outlet />
-      </Layout>
+      </LayoutAlpha>
     </Document>
   );
 }
@@ -21,7 +21,7 @@ export function ErrorBoundary({ error }: { error: Error }) {
 
   return (
     <Document title="Error!">
-      <Layout>
+      <LayoutAlpha>
         <div>
           <h1>There was an error</h1>
           <p>{error.message}</p>
@@ -31,7 +31,7 @@ export function ErrorBoundary({ error }: { error: Error }) {
             users to see.
           </p>
         </div>
-      </Layout>
+      </LayoutAlpha>
     </Document>
   );
 }
@@ -62,12 +62,12 @@ export function CatchBoundary() {
 
   return (
     <Document title={`${caught.status} ${caught.statusText}`}>
-      <Layout>
+      <LayoutAlpha>
         <h1>
           {caught.status}: {caught.statusText}
         </h1>
         {message}
-      </Layout>
+      </LayoutAlpha>
     </Document>
   );
 }

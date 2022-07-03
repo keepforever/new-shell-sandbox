@@ -34,6 +34,16 @@ const NavbarTop = () => {
       >
         About
       </NavLink>
+
+      <NavLink
+        to="/brian-alpha"
+        style={({ isActive }) => ({
+          fontWeight: isActive ? "bold" : "normal",
+          textDecoration: isActive ? "underline" : "none",
+        })}
+      >
+        Brian Alpha
+      </NavLink>
     </Box>
   );
 };
