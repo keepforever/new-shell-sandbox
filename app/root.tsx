@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Outlet, useCatch } from "remix";
 import LayoutAlpha from "~/components/LayoutAlpha";
+import Layout from "~/components/Layout";
 import { Document } from "~/components/Document";
 
 // https://remix.run/api/conventions#default-export
