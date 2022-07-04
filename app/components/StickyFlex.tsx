@@ -16,6 +16,7 @@ type Props = {
   backgroundColor?: string;
   color?: string;
   title?: string;
+  sx?: any
 };
 
 export const StickyFlex: React.FC<Props> = ({
@@ -23,6 +24,7 @@ export const StickyFlex: React.FC<Props> = ({
   color,
   backgroundColor,
   title,
+  sx
 }) => {
   return (
     <Box
@@ -35,6 +37,7 @@ export const StickyFlex: React.FC<Props> = ({
         color,
         p: 3,
         fontSize: "1.5rem",
+        ...sx
       }}
     >
       <Box display="flex" flexDirection="column">

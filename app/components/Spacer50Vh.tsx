@@ -9,11 +9,12 @@ export const Spacer25Vh: React.FC<Props> = (props) => {
       sx={{
         height: "50vh",
         p: 3,
-        outline: "1px solid black",
+        my: 2,
+        outline: "3px solid purple",
         fontSize: "1.5em",
       }}
     >
-      <h3>Spacer - 25Vh</h3>
+      <h3>Spacer - 50Vh</h3>
     </Box>
   );
 };

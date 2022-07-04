@@ -9,7 +9,8 @@ export const Spacer25Vh: React.FC<Props> = (props) => {
       sx={{
         height: "25vh",
         p: 3,
-        outline: "1px solid black",
+        my: 2,
+        outline: "3px solid black",
         fontSize: "1.5em",
       }}
     >
