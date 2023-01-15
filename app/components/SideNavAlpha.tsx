@@ -17,33 +17,20 @@ export const SideNavAlpha: React.FC<Props> = (props) => {
         display: matches ? "block" : "none",
       }}
     >
-      <Box display="flex" flexDirection="column" sx={{borderRadius: 2,  p: 2, backgroundColor: 'white', }}>
-      <Typography
-          variant="h6"
-          noWrap
-          component="div"
-          mb={1}
-          
-          >
+      <Box
+        display="flex"
+        flexDirection="column"
+        sx={{ borderRadius: 2, p: 2, backgroundColor: "white" }}
+      >
+        <Typography variant="footnote" noWrap component="div" mb={1}>
           Sub Link 1
         </Typography>
 
-        <Typography
-          mb={1}
-          variant="h6"
-          noWrap
-          component="div"
-          
-        >
+        <Typography mb={1} variant="footnote" noWrap component="div">
           Sub Link 2
         </Typography>
 
-        <Typography
-          variant="h6"
-          noWrap
-          component="div"
-          
-        >
+        <Typography variant="footnote" noWrap component="div">
           Sub Link 3
         </Typography>
       </Box>
