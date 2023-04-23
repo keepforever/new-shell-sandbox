@@ -44,6 +44,16 @@ const NavbarTop = () => {
       >
         Brian Alpha
       </NavLink>
+
+      <NavLink
+        to="/dropdown"
+        style={({ isActive }) => ({
+          fontWeight: isActive ? "bold" : "normal",
+          textDecoration: isActive ? "underline" : "none",
+        })}
+      >
+        Dropdown
+      </NavLink>
     </Box>
   );
 };
