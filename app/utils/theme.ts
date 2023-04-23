@@ -59,13 +59,26 @@ declare module "@mui/material/Typography" {
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#556cd6",
+      main: "#ff69b4", // bright pink
     },
     secondary: {
-      main: "#19857b",
+      main: "#80c342", // lime green
     },
     error: {
-      main: red.A400,
+      main: "#ff1744", // bright red
+    },
+    warning: {
+      main: "#ffb74d", // orange
+    },
+    info: {
+      main: "#2196f3", // blue
+    },
+    success: {
+      main: "#4caf50", // green
+    },
+    background: {
+      default: "#f1f1f1", // light gray
+      paper: "#ffffff", // white
     },
   },
   typography: {
