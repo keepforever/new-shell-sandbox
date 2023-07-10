@@ -6,6 +6,7 @@ import Spacer50Vh from "~/components/Spacer50Vh";
 import Spacer25Vh from "~/components/Spacer25Vh";
 import StickyFlex from "~/components/StickyFlex";
 import { useStickyHasStuck } from "~/hooks/useStickyHasStuck";
+import { ParentChildHoverExperiment } from "~/components/ParentChildHoverExperiment";
 
 // https://remix.run/api/conventions#meta
 export const meta: MetaFunction = () => {
@@ -42,6 +43,7 @@ export default function Index() {
         />
       </Box>
       <Box display="flex" flex={10} flexDirection="column">
+        <ParentChildHoverExperiment />
         <Spacer25Vh />
         <Typography variant="h4" component="h1" gutterBottom color="Highlight">
           Text Alpha
@@ -49,7 +51,6 @@ export default function Index() {
         <Typography variant="h4" component="h1" gutterBottom color="Highlight">
           Text Beta
         </Typography>
-
         <Box
           ref={ref}
           display="flex"
@@ -77,9 +78,7 @@ export default function Index() {
             ) : null}
           </Box>
         </Box>
-
         {/* <StickyFlex top={0} backgroundColor="blue" color="red" /> */}
-
         <StickyFlex top={150} backgroundColor="cornsilk" color="black" />
         <Spacer50Vh />
         <Spacer25Vh />
